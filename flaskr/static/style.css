@@ -1,0 +1,105 @@
+/* 全体の設定 */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('{{ url_for("static", filename="background.jpg") }}');
+  background-size: cover;
+  background-attachment: fixed;
+  color: #333;
+}
+
+/* 見出し */
+h1 {
+  text-align: center;
+  color: #333;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  color: #888888;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* 表のスタイル */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(200, 230, 201, 0.7);
+}
+
+table tr:hover {
+  background-color: rgba(76, 175, 80, 0.3);
+  transition: background-color 0.3s;
+}
+
+/* フォームのスタイル */
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 30%;
+  margin: 20px auto;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* リンクのボタン */
+a {
+  display: block;
+  width: 20%;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+a:hover {
+  background-color: #0056b3;
+}
